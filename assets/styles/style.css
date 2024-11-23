@@ -5,4 +5,163 @@
 @font-face {
   font-family: Squada;
   src: url("../fonts/SquadaOne-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(14, 0, 254) 0%, rgb(3, 3, 132) 40%, rgb(137, 235, 255) 83%);
+  min-height: 100vh;
+}
+body header {
+  margin-top: 30px;
+}
+body header h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
+}
+body main {
+  width: 85%;
+  margin: 30px auto;
+}
+body main #container {
+  border: 3px double whitesmoke;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 7px white;
+          box-shadow: 3px 3px 7px white;
+}
+body main #container #citation {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 2rem;
+  color: whitesmoke;
+  font-family: Italianno;
+}
+body main #container #line {
+  width: 35%;
+  margin: 10px auto;
+  height: 5px;
+  background: aquamarine;
+  border: 2px solid aqua;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px 3px #0043ff;
+          box-shadow: 0 0 5px 3px #0043ff;
+}
+body main #container #author {
+  width: 85%;
+  margin: 10px auto;
+  text-align: center;
+  color: wheat;
+  font-family: Squada;
+}
+body main #btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body main #btn button {
+  cursor: pointer;
+  width: 100%;
+  margin: 13px 0;
+  background: whitesmoke;
+  border: 5px double gray;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body main #btn button:hover {
+  width: 100%;
+  background: #feffb5;
+  border: 5px double yellow;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px 3px #f1ff00;
+          box-shadow: 0 0 5px 3px #f1ff00;
+}
+body footer {
+  border: 1px solid whitesmoke;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body footer #prod {
+  color: whitesmoke;
+  font-family: Squada;
+  font-size: 0.7rem;
+  margin: 10px 0;
+}
+body footer #langage {
+  width: 95%;
+  margin: 5px 0;
+  padding: 5px 0;
+  border-radius: 10px;
+  background: rgba(245, 245, 245, 0.7019607843);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+body footer #langage p {
+  font-size: 0.7rem;
+  color: black;
+  font-family: Squada;
+}
+body footer #langage img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 758px) {
+  body header h1 {
+    font-size: 3.4rem;
+  }
+  body main #container #citation {
+    font-size: 3.6rem;
+  }
+  body main #container #author {
+    font-size: 2.1rem;
+  }
+  body main button {
+    font-size: 1.8rem;
+  }
+  body footer #prod {
+    font-size: 1.1rem;
+  }
+  body footer #langage p {
+    font-size: 1.1rem;
+  }
+  body footer #langage img {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body header {
+    margin-top: 50px;
+  }
+  body main {
+    margin: 158px auto;
+  }
+  body main #btn {
+    margin: 30px 0;
+  }
 }/*# sourceMappingURL=style.css.map */
